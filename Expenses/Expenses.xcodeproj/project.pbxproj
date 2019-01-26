@@ -13,6 +13,9 @@
 		E1C48D3821FBE4B30036069C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C48D3621FBE4B30036069C /* LaunchScreen.storyboard */; };
 		E1C48D4321FBE4B30036069C /* ExpensesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C48D4221FBE4B30036069C /* ExpensesTests.swift */; };
 		E1C48D4E21FBE4B30036069C /* ExpensesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C48D4D21FBE4B30036069C /* ExpensesUITests.swift */; };
+		E1C48D5C21FBE8CB0036069C /* ExpensesEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C48D5B21FBE8CB0036069C /* ExpensesEventViewController.swift */; };
+		E1C48D5E21FBEF330036069C /* ExpensesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C48D5D21FBEF330036069C /* ExpensesTableViewCell.swift */; };
+		E1C48D6821FBF9F80036069C /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C48D6721FBF9F80036069C /* Expenses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		E1C48D4921FBE4B30036069C /* ExpensesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpensesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C48D4D21FBE4B30036069C /* ExpensesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesUITests.swift; sourceTree = "<group>"; };
 		E1C48D4F21FBE4B30036069C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1C48D5B21FBE8CB0036069C /* ExpensesEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesEventViewController.swift; sourceTree = "<group>"; };
+		E1C48D5D21FBEF330036069C /* ExpensesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesTableViewCell.swift; sourceTree = "<group>"; };
+		E1C48D6721FBF9F80036069C /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,10 @@
 		E1C48D2C21FBE4B10036069C /* Expenses */ = {
 			isa = PBXGroup;
 			children = (
+				E1C48D6721FBF9F80036069C /* Expenses.swift */,
 				E1C48D2D21FBE4B10036069C /* AppDelegate.swift */,
+				E1C48D5B21FBE8CB0036069C /* ExpensesEventViewController.swift */,
+				E1C48D5D21FBEF330036069C /* ExpensesTableViewCell.swift */,
 				E1C48D3121FBE4B10036069C /* Main.storyboard */,
 				E1C48D3421FBE4B30036069C /* Assets.xcassets */,
 				E1C48D3621FBE4B30036069C /* LaunchScreen.storyboard */,
@@ -190,6 +199,7 @@
 				TargetAttributes = {
 					E1C48D2921FBE4B10036069C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					E1C48D3D21FBE4B30036069C = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -253,7 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1C48D6821FBF9F80036069C /* Expenses.swift in Sources */,
+				E1C48D5C21FBE8CB0036069C /* ExpensesEventViewController.swift in Sources */,
 				E1C48D2E21FBE4B10036069C /* AppDelegate.swift in Sources */,
+				E1C48D5E21FBEF330036069C /* ExpensesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Expenses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -434,6 +448,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ll.Expenses;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -443,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Expenses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
